@@ -60,12 +60,12 @@ else:
 IS_FSUB = is_enabled('IS_FSUB', True)
 
 # support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002077293491') #support group id ex:  -1002936246860
-if len(SUPPORT_GROUP) == 0:
-    print('Error - SUPPORT_GROUP is missing, exiting now')
-    exit()
-else:
-    SUPPORT_GROUP = int(SUPPORT_GROUP)
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '') #support group id ex:  -1002936246860
+#if len(SUPPORT_GROUP) == 0:
+   # print('Error - SUPPORT_GROUP is missing, exiting now')
+   # exit()
+#else:
+   # SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
 DATABASE_URL = environ.get('DATABASE_URL', "") #mongo db url
