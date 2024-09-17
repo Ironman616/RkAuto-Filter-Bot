@@ -130,7 +130,7 @@ if len(URL) == 0:
 else:
     if URL.startswith(('https://', 'http://')):
         if not URL.endswith("/"):
-        URL += '/'
+            URL += '/'
     elif is_valid_ip(URL):
         URL = f'http://{URL}/'
     else:
